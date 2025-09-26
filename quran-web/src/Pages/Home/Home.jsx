@@ -227,6 +227,21 @@ const Home = () => {
         ))}
       </div>
 </section>
+
+
+{/* SUPPORT SECTION */}
+<section className="h-[700px]">
+<div className="bg-[url('/Shahada.jpg')] bg-cover bg-center h-[600px] rounded-xl mt-30">
+<div className="m-20 pt-34">
+  <h1 className="text-white text-6xl font-medium leading-20">Support us,<br/>
+we need your help.</h1>
+<p className="text-white leading-8">May Allah bless you! Thank you. Those who
+   (in charity) spend of their goods <br/> by night and by day, in secret and in public, have their reward
+    with their Lord</p>
+    <button className="mt-5 bg-yellow-600 text-white px-10 py-3 rounded-lg font-medium hover:bg-yellow-700 transition">Donate Now</button>
+</div>
+</div>
+</section>
     </>
   );
 };
