@@ -18,7 +18,7 @@ const Navbar = () => {
   ];
 
   return (
-    <header className="fixed top-0 left-0 w-full bg-white shadow-sm z-50">
+    <header className="fixed top-0 left-0 w-full bg-white ">
       <nav className="container mx-auto h-[70px] flex justify-between items-center px-6 lg:px-12">
         {/* Logo */}
         <div className="flex items-center">
@@ -100,9 +100,7 @@ const Navbar = () => {
             <li className="flex space-x-6 mt-4">
               <div className="relative cursor-pointer">
                 <FaShoppingBag size={22} />
-                <span className="absolute -top-2 -right-3 bg-[#D9A940] text-white text-xs rounded-full px-1.5 font-semibold">
-                  2
-                </span>
+                
               </div>
               <button className="cursor-pointer hover:text-[#D9A940] transition duration-300">
                 <FaSearch size={20} />
