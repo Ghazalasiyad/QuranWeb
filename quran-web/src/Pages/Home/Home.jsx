@@ -7,9 +7,59 @@ import Shahada from "../../assets/Shahada.jpg";
 import Salah from "../../assets/Salah.jpg";
 import Sawm from "../../assets/Sawm.jpg"; 
 import Zakah from "../../assets/zakah.jpg";
-import Hajj from "../../assets/haj.jpg";   
+import Hajj from "../../assets/haj.jpg";
+import Card from "../../Components/Card/Card" 
+import Quran from "../../assets/quran.jpg"  
+import Child from "../../assets/child.jpg" 
+import Development from "../../assets/development.jpg" 
+import Charity from "../../assets/charity.jpg" 
+import Matrimonial from "../../assets/matrimonial.jpg" 
+import Funeral from "../../assets/funerals.jpg" 
 const Home = () => {
-  
+   const cardsData = [
+    {
+      number: "01",
+      icon: Quran,
+      title: "Quran Memorization",
+      description: "Betus acipsum srci fusid commod atutro. Enim facilisis donec gomdo enyn. Digsim amet feugiat nec proin lacinia..",
+      buttonText: "Read More...",
+    },
+    {
+      number: "02",
+      icon: Child,
+      title: "Special Child Care",
+      description: "Betus acipsum srci fusid commod atutro. Enim facilisis donec gomdo enyn. Digsim amet feugiat nec proin lacinia..",
+      buttonText: "Read More...",
+    },
+    {
+      number: "03",
+      icon: Development,
+      title: "Mosque Development",
+      description: "Betus acipsum srci fusid commod atutro. Enim facilisis donec gomdo enyn. Digsim amet feugiat nec proin lacinia..",
+      buttonText: "Read More...",
+    },
+    {
+      number: "04",
+      icon: Charity,
+      title: "Charity & Donation",
+      description: "Betus acipsum srci fusid commod atutro. Enim facilisis donec gomdo enyn. Digsim amet feugiat nec proin lacinia..",
+      buttonText: "Read More...",
+    },
+    {
+      number: "05",
+      icon: Matrimonial,
+      title: "Matrimonial",
+      description: "Betus acipsum srci fusid commod atutro. Enim facilisis donec gomdo enyn. Digsim amet feugiat nec proin lacinia..",
+      buttonText: "Read More...",
+    },
+    {
+      number: "06",
+      icon: Funeral,
+      title: "Funerals",
+      description: "Betus acipsum srci fusid commod atutro. Enim facilisis donec gomdo enyn. Digsim amet feugiat nec proin lacinia..",
+      buttonText: "Read More...",
+    },
+  ];
   return (
     <>
       {/* Hero Section */}
@@ -157,12 +207,26 @@ const Home = () => {
       </section>
 
       {/* Service section */}
+      <section>
       {/* text */}
 <div className="pt-10">
   
   <p className="text-yellow-600 text-center text-xl">Our Services</p>
   <h2 className="text-center text-5xl font-semibold">Our Services for Humanity</h2>
 </div>
+   <div className="container mx-auto grid md:grid-cols-3 gap-8 mt-20">
+        {cardsData.map((card, index) => (
+          <Card
+            key={index}
+            number={card.number}
+            icon={card.icon}
+            title={card.title}
+            description={card.description}
+            buttonText={card.buttonText}
+          />
+        ))}
+      </div>
+</section>
     </>
   );
 };
