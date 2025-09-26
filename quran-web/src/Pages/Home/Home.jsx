@@ -9,12 +9,16 @@ import Sawm from "../../assets/Sawm.jpg";
 import Zakah from "../../assets/zakah.jpg";
 import Hajj from "../../assets/haj.jpg";
 import Card from "../../Components/Card/Card" 
+import BlogCard from "../../Components/BlogCard/BlogCard" 
 import Quran from "../../assets/quran.jpg"  
 import Child from "../../assets/child.jpg" 
 import Development from "../../assets/development.jpg" 
 import Charity from "../../assets/charity.jpg" 
 import Matrimonial from "../../assets/matrimonial.jpg" 
 import Funeral from "../../assets/funerals.jpg" 
+import Blog1 from "../../assets/blog1.jpg" 
+import Blog2 from "../../assets/blog2.jpg" 
+import Blog3 from "../../assets/blog3.jpg" 
 const Home = () => {
    const cardsData = [
     {
@@ -58,6 +62,26 @@ const Home = () => {
       title: "Funerals",
       description: "Betus acipsum srci fusid commod atutro. Enim facilisis donec gomdo enyn. Digsim amet feugiat nec proin lacinia..",
       buttonText: "Read More...",
+    },
+  ];
+   const blogs = [
+    {
+      image: Blog1,
+      date: "Sep 03, 2021",
+      author: "Anne William",
+      title: "How to Teach Kids Ramadan Isn’t about Food",
+    },
+    {
+      image: Blog2,
+      date: "Sep 05, 2021",
+      author: "Anne William",
+      title: "The Importance of Marriage in Islam.",
+    },
+    {
+      image: Blog3,
+      date: "Sep 10, 2021",
+      author: "Anne William",
+      title: "Five Groups of People during Ramadan",
     },
   ];
   return (
@@ -167,44 +191,62 @@ const Home = () => {
 
       {/* PIllars Section */}
      
-      <section className="bg-[#f8f8f8] bg-cover bg-center h-[80vh] mt-20">
-{/* text */}
-<div className="pt-10">
-  
-  <p className="text-yellow-600 text-center text-xl">Islam pillars</p>
-  <h2 className="text-center text-5xl font-semibold">Five Pillars of Islam</h2>
-</div>
-
-{/* images section */}
-<div className="flex gap-10 mt-20 justify-center m-10">
-  <div>
-    <img src={Shahada}
-     alt="Shahada" 
-     className="w-[200px] sm:w-[270px] rounded-4xl"/>
-     <h2 className="text-center text-4xl mt-2 font-semibold">SHAHADAH</h2>
-     
+     <section className="bg-[#f8f8f8] bg-cover bg-center py-16 mt-20">
+  {/* text */}
+  <div className="text-center mb-12">
+    <p className="text-yellow-600 text-xl">Islam pillars</p>
+    <h2 className="text-3xl md:text-5xl font-semibold">FIVE PILLARS OF ISLAM</h2>
   </div>
-  
-  <div><img src={Salah}
-     alt="Salah" 
-     className="w-[200px] sm:w-[270px] rounded-4xl"/>
-     <h2 className="text-center text-4xl mt-2 font-semibold">SALAH</h2></div>
-  <div><img src={Sawm}
-     alt="Sawm" 
-     className="w-[200px] sm:w-[270px] rounded-4xl"/>
-     <h2 className="text-center text-4xl mt-2 font-semibold">SAWM</h2></div>
-  <div><img src={Zakah}
-     alt="Zakah" 
-     className="w-[200px] sm:w-[270px] rounded-4xl"/>
-     <h2 className="text-center text-4xl mt-2 font-semibold">ZAKAH</h2></div>
-    <div>
-<img src={Hajj}
-     alt="Hajj" 
-     className="w-[200px] sm:w-[270px] rounded-4xl"/>
-     <h2 className="text-center text-4xl mt-2 font-semibold">HAJJ</h2>
-</div>
-</div>
-      </section>
+
+  {/* images section */}
+  <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-10 px-6">
+    <div className="text-center">
+      <img
+        src={Shahada}
+        alt="Shahada"
+        className="w-[200px] sm:w-[270px] mx-auto rounded-3xl"
+      />
+      <h2 className="text-2xl md:text-3xl font-semibold mt-4">SHAHADAH</h2>
+    </div>
+
+    <div className="text-center">
+      <img
+        src={Salah}
+        alt="Salah"
+        className="w-[200px] sm:w-[270px] mx-auto rounded-3xl"
+      />
+      <h2 className="text-2xl md:text-3xl font-semibold mt-4">SALAH</h2>
+    </div>
+
+    <div className="text-center">
+      <img
+        src={Sawm}
+        alt="Sawm"
+        className="w-[200px] sm:w-[270px] mx-auto rounded-3xl"
+      />
+      <h2 className="text-2xl md:text-3xl font-semibold mt-4">SAWM</h2>
+    </div>
+
+    <div className="text-center">
+      <img
+        src={Zakah}
+        alt="Zakah"
+        className="w-[200px] sm:w-[270px] mx-auto rounded-3xl"
+      />
+      <h2 className="text-2xl md:text-3xl font-semibold mt-4">ZAKAH</h2>
+    </div>
+
+    <div className="text-center">
+      <img
+        src={Hajj}
+        alt="Hajj"
+        className="w-[200px] sm:w-[270px] mx-auto rounded-3xl"
+      />
+      <h2 className="text-2xl md:text-3xl font-semibold mt-4">HAJJ</h2>
+    </div>
+  </div>
+</section>
+
 
       {/* Service section */}
       <section>
@@ -212,7 +254,7 @@ const Home = () => {
 <div className="pt-10">
   
   <p className="text-yellow-600 text-center text-xl">Our Services</p>
-  <h2 className="text-center text-5xl font-semibold">Our Services for Humanity</h2>
+  <h2 className="text-center text-5xl font-semibold">OUR SERVICES FOR HUMANITY</h2>
 </div>
    <div className="container mx-auto grid md:grid-cols-3 gap-8 mt-20">
         {cardsData.map((card, index) => (
@@ -230,7 +272,7 @@ const Home = () => {
 
 
 {/* SUPPORT SECTION */}
-<section className="h-[700px]">
+<section>
 <div className="bg-[url('/Shahada.jpg')] bg-cover bg-center h-[600px] rounded-xl mt-30">
 <div className="m-20 pt-34">
   <h1 className="text-white text-6xl font-medium leading-20">Support us,<br/>
@@ -242,6 +284,23 @@ we need your help.</h1>
 </div>
 </div>
 </section>
+
+{/* BLOG SECTION */}
+<section className="py-16 px-6">
+  <div className="pt-10">
+  
+  <p className="text-yellow-600 text-center text-xl">Our Blog</p>
+  <h2 className="text-center text-5xl font-semibold">OUR LATEST NEWS </h2>
+</div>
+      <div className="container mx-auto grid md:grid-cols-3 mt-10">
+        {blogs.map((blog, index) => (
+          <BlogCard key={index} {...blog} />
+        ))}
+      </div>
+    </section>
+
+
+ 
     </>
   );
 };
