@@ -18,7 +18,9 @@ import Matrimonial from "../../assets/matrimonial.jpg"
 import Funeral from "../../assets/funerals.jpg" 
 import Blog1 from "../../assets/blog1.jpg" 
 import Blog2 from "../../assets/blog2.jpg" 
-import Blog3 from "../../assets/blog3.jpg" 
+import Blog3 from "../../assets/blog3.jpg"
+import Logo from "../../assets/logo.jpg"; 
+import { FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn } from "react-icons/fa"; 
 const Home = () => {
    const cardsData = [
     {
@@ -286,21 +288,122 @@ we need your help.</h1>
 </section>
 
 {/* BLOG SECTION */}
-<section className="py-16 px-6">
+{/* Blog Section */}
+<section className="py-16 px-6 relative z-20">
   <div className="pt-10">
-  
-  <p className="text-yellow-600 text-center text-xl">Our Blog</p>
-  <h2 className="text-center text-5xl font-semibold">OUR LATEST NEWS </h2>
-</div>
-      <div className="container mx-auto grid md:grid-cols-3 mt-10">
-        {blogs.map((blog, index) => (
-          <BlogCard key={index} {...blog} />
-        ))}
+    <p className="text-yellow-600 text-center text-xl">Our Blog</p>
+    <h2 className="text-center text-5xl font-semibold">OUR LATEST NEWS</h2>
+  </div>
+  <div className="container mx-auto grid md:grid-cols-3 mt-10">
+    {blogs.map((blog, index) => (
+      <BlogCard key={index} {...blog} />
+    ))}
+  </div>
+</section>
+
+{/* Prayer Timings */}
+<section className="bg-yellow-600 rounded-4xl h-[200px] m-20 py-20 relative z-20">
+  <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6 text-center text-white">
+    <div>
+      <h2 className="text-2xl font-semibold uppercase">Fajar</h2>
+      <h3 className="text-lg">4:10 am</h3>
+    </div>
+    <div>
+      <h2 className="text-2xl font-semibold uppercase">Sunrise</h2>
+      <h3 className="text-lg">5:50 am</h3>
+    </div>
+    <div>
+      <h2 className="text-2xl font-semibold uppercase">Zhuhr</h2>
+      <h3 className="text-lg">12:36 pm</h3>
+    </div>
+    <div>
+      <h2 className="text-2xl font-semibold uppercase">Asr</h2>
+      <h3 className="text-lg">4:15 pm</h3>
+    </div>
+    <div>
+      <h2 className="text-2xl font-semibold uppercase">Maghrib</h2>
+      <h3 className="text-lg">6:15 pm</h3>
+    </div>
+    <div>
+      <h2 className="text-2xl font-semibold uppercase">Isha</h2>
+      <h3 className="text-lg">8:30 pm</h3>
+    </div>
+  </div>
+</section>
+
+{/* Footer */}
+<footer className="bg-[#000000] text-white pt-40 relative -mt-32 z-10">
+  <div className="container mx-auto px-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12">
+    
+    {/* Column 1 - Blog/Intro */}
+    <div>
+      <img src={Logo} alt="Logo" className="w-28 mb-4" />
+      <p className="text-gray-300 leading-relaxed">
+        Mattis inelit neque quis donec eleifnd amet. Amet sed et cursus eu
+        euismod. Egestas in morbi tristique ornare vulputate vitae enim.
+      </p>
+      <div className="flex gap-4 mt-6">
+        <a href="#" className="p-2 bg-gray-800 rounded-full hover:bg-yellow-600 transition">
+          <FaFacebookF />
+        </a>
+        <a href="#" className="p-2 bg-gray-800 rounded-full hover:bg-yellow-600 transition">
+          <FaTwitter />
+        </a>
+        <a href="#" className="p-2 bg-gray-800 rounded-full hover:bg-yellow-600 transition">
+          <FaInstagram />
+        </a>
+        <a href="#" className="p-2 bg-gray-800 rounded-full hover:bg-yellow-600 transition">
+          <FaLinkedinIn />
+        </a>
       </div>
-    </section>
+    </div>
 
+    {/* Column 2 - Services */}
+    <div>
+      <h3 className="text-xl font-semibold mb-4">Services</h3>
+      <ul className="list-disc list-inside space-y-2 text-gray-300">
+        <li>Quran Memorization</li>
+        <li>Special Child Care</li>
+        <li>Mosque Development</li>
+        <li>Charity & Donation</li>
+        <li>Matrimonial</li>
+      </ul>
+    </div>
 
- 
+    {/* Column 3 - Quick Links */}
+    <div>
+      <h3 className="text-xl font-semibold mb-4">Quick Links</h3>
+      <ul className="list-disc list-inside space-y-2 text-gray-300">
+        <li>Home</li>
+        <li>About Us</li>
+        <li>Services</li>
+        <li>Event</li>
+        <li>Donate</li>
+      </ul>
+    </div>
+
+    {/* Column 4 - Newsletter */}
+    <div>
+      <h3 className="text-xl font-semibold mb-4">Newsletter</h3>
+      <div className="flex flex-col gap-4 rounded-lg p-4">
+        <input
+          type="email"
+          placeholder="Enter your email"
+          className="w-full px-4 py-3 text-gray-200 bg-transparent border border-gray-600 rounded-md outline-none"
+        />
+        <button className="bg-yellow-600 px-6 py-3 font-semibold rounded-md hover:bg-yellow-700 transition">
+          Subscribe
+        </button>
+      </div>
+    </div>
+  </div>
+
+  {/* Bottom Border & Copyright */}
+  <div className="border-t border-gray-700 mt-12 py-6 text-center text-gray-400">
+    Copyright © 2023 Istiqbal by wpOceans. All Rights Reserved.
+  </div>
+</footer>
+
     </>
   );
 };
