@@ -20,6 +20,7 @@ import Blog1 from "../../assets/blog1.jpg"
 import Blog2 from "../../assets/blog2.jpg" 
 import Blog3 from "../../assets/blog3.jpg"
 import Logo from "../../assets/logo.jpg"; 
+import EventSlider from "../../Components/Eventslider/Eventslider";
 import { FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn } from "react-icons/fa"; 
 const Home = () => {
    const cardsData = [
@@ -251,50 +252,54 @@ const Home = () => {
 
 
       {/* Service section */}
-      <section>
-      {/* text */}
-<div className="pt-10">
-  
-  <p className="text-yellow-600 text-center text-xl">Our Services</p>
-  <h2 className="text-center text-5xl font-semibold">OUR SERVICES FOR HUMANITY</h2>
-</div>
-   <div className="container mx-auto grid md:grid-cols-3 gap-8 mt-20">
-        {cardsData.map((card, index) => (
-          <Card
-            key={index}
-            number={card.number}
-            icon={card.icon}
-            title={card.title}
-            description={card.description}
-            buttonText={card.buttonText}
-          />
-        ))}
-      </div>
-</section>
+<section> {/* text */} <div className="pt-10"> <p className="text-yellow-600 text-center text-xl">Our Services</p> <h2
+ className="text-center text-5xl font-semibold">OUR SERVICES FOR HUMANITY</h2> </div> <div className="container mx-auto 
+ grid md:grid-cols-3 gap-8 mt-20"> {cardsData.map((card, index) => ( <Card key={index} number={card.number} icon={card.icon} title={card.title} 
+description={card.description} buttonText={card.buttonText} /> ))} </div> </section>
+
+
+
 
 
 {/* SUPPORT SECTION */}
-<section>
-<div className="bg-[url('/Shahada.jpg')] bg-cover bg-center h-[600px] rounded-xl mt-30">
-<div className="m-20 pt-34">
-  <h1 className="text-white text-6xl font-medium leading-20">Support us,<br/>
-we need your help.</h1>
-<p className="text-white leading-8">May Allah bless you! Thank you. Those who
-   (in charity) spend of their goods <br/> by night and by day, in secret and in public, have their reward
-    with their Lord</p>
-    <button className="mt-5 bg-yellow-600 text-white px-10 py-3 rounded-lg font-medium hover:bg-yellow-700 transition">Donate Now</button>
-</div>
-</div>
+<section className="px-4 sm:px-6 lg:px-8">
+  <div className="bg-[url('/Shahada.jpg')] bg-cover bg-center h-auto rounded-xl mt-10 sm:mt-20 flex items-center">
+    <div className="m-6 sm:m-12 md:m-20 py-10">
+      {/* Heading */}
+      <h1 className="text-white text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-medium leading-snug sm:leading-tight">
+        Support us, <br />
+        we need your help.
+      </h1>
+
+      {/* Paragraph */}
+      <p className="text-white mt-4 text-sm sm:text-base md:text-lg leading-relaxed">
+        May Allah bless you! Thank you. Those who (in charity) spend of their goods
+        by night and by day, in secret and in public, have their reward with their Lord.
+      </p>
+
+      {/* Button */}
+      <button className="mt-6 bg-yellow-600 text-white px-6 sm:px-8 md:px-10 py-3 rounded-lg font-medium hover:bg-yellow-700 transition">
+        Donate Now
+      </button>
+    </div>
+  </div>
 </section>
 
-{/* BLOG SECTION */}
+
+ <EventSlider />
+
+
+
 {/* Blog Section */}
 <section className="py-16 px-6 relative z-20">
   <div className="pt-10">
     <p className="text-yellow-600 text-center text-xl">Our Blog</p>
-    <h2 className="text-center text-5xl font-semibold">OUR LATEST NEWS</h2>
+    <h2 className="text-center text-3xl sm:text-4xl md:text-5xl font-semibold">
+      OUR LATEST NEWS
+    </h2>
   </div>
-  <div className="container mx-auto grid md:grid-cols-3 mt-10">
+
+  <div className="container mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 mt-10">
     {blogs.map((blog, index) => (
       <BlogCard key={index} {...blog} />
     ))}
@@ -302,34 +307,35 @@ we need your help.</h1>
 </section>
 
 {/* Prayer Timings */}
-<section className="bg-yellow-600 rounded-4xl h-[200px] m-20 py-20 relative z-20">
-  <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6 text-center text-white">
+<section className="bg-yellow-600 rounded-4xl m-6 sm:m-10 lg:m-20 py-10 sm:py-16 relative z-20">
+  <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-6 text-center text-white">
     <div>
-      <h2 className="text-2xl font-semibold uppercase">Fajar</h2>
-      <h3 className="text-lg">4:10 am</h3>
+      <h2 className="text-xl sm:text-2xl font-semibold uppercase">Fajar</h2>
+      <h3 className="text-base sm:text-lg">4:10 am</h3>
     </div>
     <div>
-      <h2 className="text-2xl font-semibold uppercase">Sunrise</h2>
-      <h3 className="text-lg">5:50 am</h3>
+      <h2 className="text-xl sm:text-2xl font-semibold uppercase">Sunrise</h2>
+      <h3 className="text-base sm:text-lg">5:50 am</h3>
     </div>
     <div>
-      <h2 className="text-2xl font-semibold uppercase">Zhuhr</h2>
-      <h3 className="text-lg">12:36 pm</h3>
+      <h2 className="text-xl sm:text-2xl font-semibold uppercase">Zhuhr</h2>
+      <h3 className="text-base sm:text-lg">12:36 pm</h3>
     </div>
     <div>
-      <h2 className="text-2xl font-semibold uppercase">Asr</h2>
-      <h3 className="text-lg">4:15 pm</h3>
+      <h2 className="text-xl sm:text-2xl font-semibold uppercase">Asr</h2>
+      <h3 className="text-base sm:text-lg">4:15 pm</h3>
     </div>
     <div>
-      <h2 className="text-2xl font-semibold uppercase">Maghrib</h2>
-      <h3 className="text-lg">6:15 pm</h3>
+      <h2 className="text-xl sm:text-2xl font-semibold uppercase">Maghrib</h2>
+      <h3 className="text-base sm:text-lg">6:15 pm</h3>
     </div>
     <div>
-      <h2 className="text-2xl font-semibold uppercase">Isha</h2>
-      <h3 className="text-lg">8:30 pm</h3>
+      <h2 className="text-xl sm:text-2xl font-semibold uppercase">Isha</h2>
+      <h3 className="text-base sm:text-lg">8:30 pm</h3>
     </div>
   </div>
 </section>
+
 
 {/* Footer */}
 <footer className="bg-[#000000] text-white pt-40 relative -mt-32 z-10">
