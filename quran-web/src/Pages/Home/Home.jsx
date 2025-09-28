@@ -22,6 +22,7 @@ import Blog3 from "../../assets/blog3.jpg"
 import Logo from "../../assets/logo.jpg"; 
 import EventSlider from "../../Components/Eventslider/Eventslider";
 import { FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn } from "react-icons/fa"; 
+import CounterList from "../../Components/Counter/Counterlist";
 const Home = () => {
    const cardsData = [
     {
@@ -276,6 +277,7 @@ description={card.description} buttonText={card.buttonText} /> ))} </div> </sect
         May Allah bless you! Thank you. Those who (in charity) spend of their goods
         by night and by day, in secret and in public, have their reward with their Lord.
       </p>
+      <CounterList/>
 
       {/* Button */}
       <button className="mt-6 bg-yellow-600 text-white px-6 sm:px-8 md:px-10 py-3 rounded-lg font-medium hover:bg-yellow-700 transition">
