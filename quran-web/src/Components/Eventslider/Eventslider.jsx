@@ -1,4 +1,4 @@
-// EventSlider.jsx
+
 import React, { useRef } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Autoplay } from "swiper/modules";
@@ -50,7 +50,7 @@ export default function EventSlider() {
           prevEl: prevRef.current,
           nextEl: nextRef.current,
         }}
-        autoplay={{ delay: 6000, disableOnInteraction: false }}
+        autoplay={{ delay: 3000, disableOnInteraction: false }}
         className="rounded-3xl"
       >
         {events.map((ev) => (
