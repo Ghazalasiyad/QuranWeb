@@ -89,7 +89,7 @@ const Navbar = () => {
                       isActive ? "text-[#D9A940] font-semibold" : ""
                     }`
                   }
-                  onClick={() => setIsOpen(false)} // close on click
+                  onClick={() => setIsOpen(false)} 
                 >
                   {link.name.toUpperCase()}
                 </NavLink>

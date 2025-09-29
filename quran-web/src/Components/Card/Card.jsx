@@ -2,7 +2,7 @@ import React from "react";
 
 const Card = ({ number, icon, title, description, buttonText }) => {
   return (
-    <div className="bg-white shadow-2xl rounded-4xl p-6 relative hover:shadow-lg transitionw-[300px] h-[300px] m-4 justify-center">
+    <div className="bg-white shadow-2xl rounded-4xl p-6 relative hover:shadow-lg transitionw-[300px] min-h-[300px] m-4 justify-center">
       {/* Top Section: Icon + Number */}
       <div className="flex items-center justify-between mb-4">
         {/* Render the image properly */}
