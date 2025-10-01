@@ -9,16 +9,16 @@ const Navbar = () => {
 
   const navLinks = [
     { name: "Home", path: "/" },
-    { name: "Event", path: "/event" },
+    { name: "Events", path: "/events" },
     { name: "Service", path: "/service" },
     { name: "Shop", path: "/shop" },
-    { name: "Pages", path: "/pages" },
+    { name: "Page", path: "/page" },
     { name: "Blog", path: "/blog" },
     { name: "Contact", path: "/contact" },
   ];
 
   return (
-    <header className="fixed top-0 left-0 w-full bg-white shadow-md z-50">
+    <header className="fixed top-0 left-0 w-full bg-white shadow-md z-50 mb-[70px]">
       <nav className="container mx-auto h-[70px] flex justify-between items-center px-6 lg:px-12">
         {/* Logo */}
         <div className="flex items-center">
@@ -75,6 +75,7 @@ const Navbar = () => {
           </button>
         </div>
       </nav>
+       
 
       {/* Mobile Menu */}
       {isOpen && (
