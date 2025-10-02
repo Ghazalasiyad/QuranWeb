@@ -24,50 +24,51 @@ import EventSlider from "../../Components/Eventslider/Eventslider";
 import { FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn } from "react-icons/fa"; 
 import CounterList from "../../Components/Counter/Counterlist";
 import Footer from "../../Components/Footer/Footer";
+import ContactForm from "../../Components/Contactform/Contactform";
 const Home = () => {
    const cardsData = [
     {
       number: "01",
       icon: Quran,
-      title: "Quran Memorization",
+      title: "Doctors Program",
       description: "Betus acipsum srci fusid commod atutro. Enim facilisis donec gomdo enyn. Digsim amet feugiat nec proin lacinia..",
       buttonText: "Read More...",
     },
     {
       number: "02",
       icon: Child,
-      title: "Special Child Care",
-      description: "Betus acipsum srci fusid commod atutro. Enim facilisis donec gomdo enyn. Digsim amet feugiat nec proin lacinia..",
+      title: "Nurses Program",
+      description: "The Nurses Program at Apex MediLink is designed for international registered nurses who want to build their careers in the United States. It provides everything you need — from licensing exam preparation to job placement and visa support.+",
       buttonText: "Read More...",
     },
-    {
-      number: "03",
-      icon: Development,
-      title: "Mosque Development",
-      description: "Betus acipsum srci fusid commod atutro. Enim facilisis donec gomdo enyn. Digsim amet feugiat nec proin lacinia..",
-      buttonText: "Read More...",
-    },
-    {
-      number: "04",
-      icon: Charity,
-      title: "Charity & Donation",
-      description: "Betus acipsum srci fusid commod atutro. Enim facilisis donec gomdo enyn. Digsim amet feugiat nec proin lacinia..",
-      buttonText: "Read More...",
-    },
-    {
-      number: "05",
-      icon: Matrimonial,
-      title: "Matrimonial",
-      description: "Betus acipsum srci fusid commod atutro. Enim facilisis donec gomdo enyn. Digsim amet feugiat nec proin lacinia..",
-      buttonText: "Read More...",
-    },
-    {
-      number: "06",
-      icon: Funeral,
-      title: "Funerals",
-      description: "Betus acipsum srci fusid commod atutro. Enim facilisis donec gomdo enyn. Digsim amet feugiat nec proin lacinia..",
-      buttonText: "Read More...",
-    },
+    // {
+    //   number: "03",
+    //   icon: Development,
+    //   title: "Mosque Development",
+    //   description: "Betus acipsum srci fusid commod atutro. Enim facilisis donec gomdo enyn. Digsim amet feugiat nec proin lacinia..",
+    //   buttonText: "Read More...",
+    // },
+    // {
+    //   number: "04",
+    //   icon: Charity,
+    //   title: "Charity & Donation",
+    //   description: "Betus acipsum srci fusid commod atutro. Enim facilisis donec gomdo enyn. Digsim amet feugiat nec proin lacinia..",
+    //   buttonText: "Read More...",
+    // },
+    // {
+    //   number: "05",
+    //   icon: Matrimonial,
+    //   title: "Matrimonial",
+    //   description: "Betus acipsum srci fusid commod atutro. Enim facilisis donec gomdo enyn. Digsim amet feugiat nec proin lacinia..",
+    //   buttonText: "Read More...",
+    // },
+    // {
+    //   number: "06",
+    //   icon: Funeral,
+    //   title: "Funerals",
+    //   description: "Betus acipsum srci fusid commod atutro. Enim facilisis donec gomdo enyn. Digsim amet feugiat nec proin lacinia..",
+    //   buttonText: "Read More...",
+    // },
   ];
    const blogs = [
     {
@@ -107,19 +108,18 @@ const Home = () => {
 
             {/* Quote */}
             <h2 className="text-3xl md:text-5xl font-bold leading-snug text-gray-900">
-              “TURN TO ALLAH <br /> BEFORE YOU RETURN <br /> TO ALLAH.”
+              Your Pathway to a Medical Career <br/> in the USA
             </h2>
 
             {/* Subtext */}
             <p className="mt-6 text-gray-700 text-lg max-w-xl leading-7">
-              The Heart That Beats For Allah Is Always A Stranger Among <br />{" "}
-              The Hearts That Beat For The Dunya (World).
+             Comprehensive exam prep, visa guidance, and job placement for healthcare professionals. Or World-class support for exams, visas, <br/> and placements in the USA
             </p>
 
             {/* Button */}
             <div className="mt-8 flex justify-center md:justify-start">
               <button className="bg-yellow-600 text-white px-8 py-3 rounded-xl font-semibold shadow-md hover:bg-yellow-700 transition">
-                Discover More
+                Contact Us
               </button>
             </div>
           </div>
@@ -156,26 +156,34 @@ const Home = () => {
 
           {/* Right side - Content */}
           <div>
-            <p className="text-yellow-600 font-semibold">About Us</p>
+            
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 leading-snug font-serif">
-              Welcome to Isteqbal <br /> Islamic Center for Muslims
+             About Us
             </h2>
-            <p className="mt-6 text-gray-700 leading-relaxed">
-              Lorem ipsum dolor sit amet consectetur. Eget leo hac mauris aliquam
-              luctus ut nascetur. Nunc sit odio tempor massa dui non. Quam nisi
-              sagittis non tincidunt. Eu dolor gravida mattis sagittis aliquet eu
-              tellus maecenas. Nisi a mattis ultrices id arcu massa nec leo non.
-              Eget pretium nam felis eget varius faucibus velit. Malesuada
-              facilisis habitasse eget tellus tristique turpis scelerisque lacus.
-              Habitant vivamus ut et augue. Non id amet ut luctus consequat
-              egestas id nunc.
+            
+            <p className="mt-6 text-yellow-600 font-semibold leading-relaxed">
+              Who we are
             </p>
+            <p className="mt-3 text-gray-700 leading-relaxed">Apex MediLink, under Rupani Development Initiatives, is a global healthcare support institute. We empower doctors, nurses, pharmacists, and technicians to achieve their dreams of working in the USA through exam preparation,
+               visa assistance, and job placements..</p>
+            
+            <p className="mt-6 text-yellow-600 font-semibold leading-relaxed">
+              Our Mission
+            </p>
+            <p className="text-gray-700"> To empower healthcare professionals worldwide with ethical,
+               impactful employment opportunities in advanced healthcare systems.</p>
+            <p className="mt-6 text-yellow-600 font-semibold leading-relaxed">
+              Our Vision
+            </p>
+            <p className="text-gray-700">To become a trusted global bridge connecting skilled health professionals from developing 
+              nations with opportunities in advanced healthcare systems, fostering inclusive growth, 
+              dignity in migration, and better health outcomes worldwide.</p>
 
             {/* Button  */}
             <div className="mt-8  flex flex-col sm:flex-row items-center gap-6">
               {/* Button */}
               <button className="bg-yellow-600 text-white px-8 py-3 rounded-xl font-semibold shadow-md hover:bg-yellow-700 transition">
-                Discover More
+               Read More
               </button>
 
               {/* Call Info */}
@@ -196,22 +204,21 @@ const Home = () => {
 
       {/* PIllars Section */}
      
-     <section className="bg-[#f8f8f8] bg-cover bg-center py-16 mt-20">
+   <section className="bg-[#f8f8f8] bg-cover bg-center py-16 mt-20">
   {/* text */}
   <div className="text-center mb-12">
-    <p className="text-yellow-600 text-xl">Islam pillars</p>
-    <h2 className="text-3xl md:text-5xl font-semibold">FIVE PILLARS OF ISLAM</h2>
+    <h2 className="text-3xl md:text-5xl font-semibold">Key Highlights</h2>
   </div>
 
   {/* images section */}
-  <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-10 px-6">
+  <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10 px-6 justify-center">
     <div className="text-center">
       <img
         src={Shahada}
         alt="Shahada"
         className="w-[200px] sm:w-[270px] mx-auto rounded-3xl"
       />
-      <h2 className="text-2xl md:text-3xl font-semibold mt-4">SHAHADAH</h2>
+      <h2 className="text-2xl md:text-3xl font-semibold mt-4">Exam/Certification Preparation Assistance</h2>
     </div>
 
     <div className="text-center">
@@ -220,7 +227,7 @@ const Home = () => {
         alt="Salah"
         className="w-[200px] sm:w-[270px] mx-auto rounded-3xl"
       />
-      <h2 className="text-2xl md:text-3xl font-semibold mt-4">SALAH</h2>
+      <h2 className="text-2xl md:text-3xl font-semibold mt-4">Visa Assistance</h2>
     </div>
 
     <div className="text-center">
@@ -229,34 +236,17 @@ const Home = () => {
         alt="Sawm"
         className="w-[200px] sm:w-[270px] mx-auto rounded-3xl"
       />
-      <h2 className="text-2xl md:text-3xl font-semibold mt-4">SAWM</h2>
-    </div>
-
-    <div className="text-center">
-      <img
-        src={Zakah}
-        alt="Zakah"
-        className="w-[200px] sm:w-[270px] mx-auto rounded-3xl"
-      />
-      <h2 className="text-2xl md:text-3xl font-semibold mt-4">ZAKAH</h2>
-    </div>
-
-    <div className="text-center">
-      <img
-        src={Hajj}
-        alt="Hajj"
-        className="w-[200px] sm:w-[270px] mx-auto rounded-3xl"
-      />
-      <h2 className="text-2xl md:text-3xl font-semibold mt-4">HAJJ</h2>
+      <h2 className="text-2xl md:text-3xl font-semibold mt-4">Placement Assistance</h2>
     </div>
   </div>
 </section>
 
 
+
       {/* Service section */}
-<section> {/* text */} <div className="pt-10"> <p className="text-yellow-600 text-center text-xl">Our Services</p> <h2
- className="text-center text-5xl font-semibold">OUR SERVICES FOR HUMANITY</h2> </div> <div className="container mx-auto 
- grid md:grid-cols-3 gap-8 mt-20"> {cardsData.map((card, index) => ( <Card key={index} number={card.number} icon={card.icon} title={card.title} 
+<section>  <div className="pt-10"> <h2
+ className="text-center text-5xl font-semibold">OUR PROGRAMS</h2> </div> <div className="container mx-auto 
+ grid md:grid-cols-2 gap-8 mt-20"> {cardsData.map((card, index) => ( <Card key={index} number={card.number} icon={card.icon} title={card.title} 
 description={card.description} buttonText={card.buttonText} /> ))} </div> </section>
 
 
@@ -289,7 +279,8 @@ description={card.description} buttonText={card.buttonText} /> ))} </div> </sect
 </section>
 
 
- <EventSlider />
+ {/* <EventSlider /> */}
+ <ContactForm/>
 
 
 
