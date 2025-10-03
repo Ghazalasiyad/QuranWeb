@@ -1,12 +1,12 @@
 import React from "react";
-import Icon from "../../assets/icon.jpg";
-import Mosque from "../../assets/mosque.jpg";
-import About1 from "../../assets/about1.jpg";
-import About2 from "../../assets/about2.jpg"; 
-import Shahada from "../../assets/Shahada.jpg"; 
-import Salah from "../../assets/Salah.jpg";
-import Sawm from "../../assets/Sawm.jpg"; 
-import Zakah from "../../assets/zakah.jpg";
+import Icon from "../../assets/loogo.png";
+import Hero from "../../assets/hero.jpg";
+import Aboutus1 from "../../assets/aboutt1.jpg";
+import Aboutus2 from "../../assets/aboutus2.png"; 
+import supportbg from "../../assets/supportbg.jpg"; 
+import Visa from "../../assets/visa.jpg";
+import Placement from "../../assets/placement.png"; 
+import Testassistance from "../../assets/testassistance.png";
 import Hajj from "../../assets/haj.jpg";
 import Card from "../../Components/Card/Card" 
 import BlogCard from "../../Components/BlogCard/BlogCard" 
@@ -31,7 +31,7 @@ const Home = () => {
       number: "01",
       icon: Quran,
       title: "Doctors Program",
-      description: "Betus acipsum srci fusid commod atutro. Enim facilisis donec gomdo enyn. Digsim amet feugiat nec proin lacinia..",
+      description: "The Doctors Program at Apex MediLink is designed for international physicians who aspire to practice medicine in the United States. It offers complete support throughout the journey — from preparation for medical licensing exams to visa guidance and job placement. With expert mentorship and personalized assistance, the program ensures doctors are well-prepared to advance their careers and succeed in the U.S. healthcare system",
       buttonText: "Read More...",
     },
     {
@@ -93,7 +93,7 @@ const Home = () => {
   return (
     <>
       {/* Hero Section */}
-      <section className="bg-[#f8f8f8] bg-cover bg-center rounded-[80px] m-10 mt-20">
+      <section className="bg-[#f8f8f8] bg-cover bg-center rounded-[80px] m-10 mt-35">
         <div className="container mx-auto grid md:grid-cols-2 items-center gap-12 px-6 py-16">
           {/* Left Side - Text */}
           <div className="ml-20">
@@ -118,7 +118,7 @@ const Home = () => {
 
             {/* Button */}
             <div className="mt-8 flex justify-center md:justify-start">
-              <button className="bg-yellow-600 text-white px-8 py-3 rounded-xl font-semibold shadow-md hover:bg-yellow-700 transition">
+              <button className="bg-[#0fb8cd] text-white px-8 py-3 rounded-xl font-semibold shadow-md hover:bg-yellow-700 transition">
                 Contact Us
               </button>
             </div>
@@ -127,9 +127,9 @@ const Home = () => {
           {/* Right Side - Image */}
           <div className="flex justify-center md:justify-end mt-10 mr-10">
             <img
-              src={Mosque}
-              alt="Mosque"
-              className="rounded-3xl shadow-lg w-[500px] sm:w-[570px]"
+              src={Hero}
+              alt="Hero"
+              className="rounded-3xl shadow-lg h-[650px] sm:w-[570px]"
             />
           </div>
         </div>
@@ -142,15 +142,15 @@ const Home = () => {
           <div className="relative flex justify-center md:justify-start">
             {/* Large Image */}
             <img
-              src={About1}
+              src={Aboutus1}
               alt="Mosque 1"
-              className="rounded-3xl w-[350px] sm:w-[450px] shadow-lg"
+              className="rounded-3xl w-[350px] h-[480px] sm:w-[450px] shadow-lg"
             />
             {/* Small Image - overlay */}
             <img
-              src={About2}
+              src={Aboutus2}
               alt="Mosque 2"
-              className="absolute -bottom-10 -right-1 rounded-3xl w-[200px] sm:w-[260px] shadow-lg"
+              className="absolute -bottom-10 -right-1 rounded-3xl w-[200px] h-[300px] sm:w-[260px] shadow-lg"
             />
           </div>
 
@@ -161,18 +161,18 @@ const Home = () => {
              About Us
             </h2>
             
-            <p className="mt-6 text-yellow-600 font-semibold leading-relaxed">
+            <p className="mt-6 text-[#0fb8cd] font-semibold leading-relaxed">
               Who we are
             </p>
             <p className="mt-3 text-gray-700 leading-relaxed">Apex MediLink, under Rupani Development Initiatives, is a global healthcare support institute. We empower doctors, nurses, pharmacists, and technicians to achieve their dreams of working in the USA through exam preparation,
                visa assistance, and job placements..</p>
             
-            <p className="mt-6 text-yellow-600 font-semibold leading-relaxed">
+            <p className="mt-6 text-[#0fb8cd] font-semibold leading-relaxed">
               Our Mission
             </p>
             <p className="text-gray-700"> To empower healthcare professionals worldwide with ethical,
                impactful employment opportunities in advanced healthcare systems.</p>
-            <p className="mt-6 text-yellow-600 font-semibold leading-relaxed">
+            <p className="mt-6 text-[#0fb8cd] font-semibold leading-relaxed">
               Our Vision
             </p>
             <p className="text-gray-700">To become a trusted global bridge connecting skilled health professionals from developing 
@@ -182,13 +182,13 @@ const Home = () => {
             {/* Button  */}
             <div className="mt-8  flex flex-col sm:flex-row items-center gap-6">
               {/* Button */}
-              <button className="bg-yellow-600 text-white px-8 py-3 rounded-xl font-semibold shadow-md hover:bg-yellow-700 transition">
+              <button className="bg-[#0fb8cd] text-white px-8 py-3 rounded-xl font-semibold shadow-md hover:bg-yellow-700 transition">
                Read More
               </button>
 
               {/* Call Info */}
               <div className="flex items-center gap-3">
-                <div className="text-yellow-600 text-3xl">📞</div>
+                <div className="text-[#e9d8b1] text-3xl">📞</div>
                 <div>
                   <p className="text-gray-700">Call Us:</p>
                   <p className="text-lg font-bold text-gray-900">
@@ -214,27 +214,27 @@ const Home = () => {
   <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10 px-6 justify-center">
     <div className="text-center">
       <img
-        src={Shahada}
-        alt="Shahada"
-        className="w-[200px] sm:w-[270px] mx-auto rounded-3xl"
+        src={Testassistance}
+        alt="TestAssistance"
+        className="w-[200px] h-[300px] sm:w-[270px] mx-auto rounded-3xl"
       />
       <h2 className="text-2xl md:text-3xl font-semibold mt-4">Exam/Certification Preparation Assistance</h2>
     </div>
 
     <div className="text-center">
       <img
-        src={Salah}
-        alt="Salah"
-        className="w-[200px] sm:w-[270px] mx-auto rounded-3xl"
+        src={Visa}
+        alt="visa"
+        className="w-[200px] h-[300px]  sm:w-[270px] mx-auto rounded-3xl"
       />
       <h2 className="text-2xl md:text-3xl font-semibold mt-4">Visa Assistance</h2>
     </div>
 
     <div className="text-center">
       <img
-        src={Sawm}
-        alt="Sawm"
-        className="w-[200px] sm:w-[270px] mx-auto rounded-3xl"
+        src={Placement}
+        alt="Placement"
+        className="w-[200px] h-[300px] sm:w-[270px] mx-auto rounded-3xl"
       />
       <h2 className="text-2xl md:text-3xl font-semibold mt-4">Placement Assistance</h2>
     </div>
@@ -255,24 +255,22 @@ description={card.description} buttonText={card.buttonText} /> ))} </div> </sect
 
 {/* SUPPORT SECTION */}
 <section className="px-4 sm:px-6 lg:px-8 w-full">
-  <div className="bg-[url('/Shahada.jpg')] bg-cover bg-center w-full h-auto rounded-xl mt-10 sm:mt-20 flex items-center">
+  <div className="bg-[url('/supportbg.jpg')] bg-cover bg-center w-full h-auto rounded-xl mt-10 sm:mt-20 flex items-center">
     <div className="m-6 sm:m-12 md:m-20 py-10">
       {/* Heading */}
       <h1 className="text-white text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-medium leading-snug sm:leading-tight">
-        Support us, <br />
-        we need your help.
+        Support Our Mission, Empower <br/> Doctors Worldwide
       </h1>
 
       {/* Paragraph */}
       <p className="text-white mt-4 text-sm sm:text-base md:text-lg leading-relaxed">
-        May Allah bless you! Thank you. Those who (in charity) spend of their goods <br/>
-        by night and by day, in secret and in public, have their reward with their Lord.
+       We support international doctors with exam preparation, visa guidance, and job placement, helping them build <br/> successful medical careers in the United States.
       </p>
       <CounterList/>
 
       {/* Button */}
-      <button className="mt-6 bg-yellow-600 text-white px-6 sm:px-8 md:px-10 py-3 rounded-lg font-medium hover:bg-yellow-700 transition">
-        Donate Now
+      <button className="mt-6 bg-[#0fb8cd] text-white px-6 sm:px-8 md:px-10 py-3 rounded-lg font-medium hover:bg-[#e9d8b1] transition">
+        Learn more
       </button>
     </div>
   </div>
@@ -280,14 +278,14 @@ description={card.description} buttonText={card.buttonText} /> ))} </div> </sect
 
 
  {/* <EventSlider /> */}
- <ContactForm/>
+ {/* <ContactForm/> */}
 
 
 
 {/* Blog Section */}
-<section className="py-16 px-6 relative z-20">
+{/* <section className="py-16 px-6 relative z-20">
   <div className="pt-10">
-    <p className="text-yellow-600 text-center text-xl">Our Blog</p>
+    <p className="text-[#e9d8b1] text-center text-xl">Our Blog</p>
     <h2 className="text-center text-3xl sm:text-4xl md:text-5xl font-semibold">
       OUR LATEST NEWS
     </h2>
@@ -298,10 +296,10 @@ description={card.description} buttonText={card.buttonText} /> ))} </div> </sect
       <BlogCard key={index} {...blog} />
     ))}
   </div>
-</section>
+</section> */}
 
 {/* Prayer Timings */}
-<section className="bg-yellow-600 rounded-4xl m-6 sm:m-10 lg:m-20 py-10 sm:py-16 relative z-20">
+<section className="bg-[#e9d8b1]0 rounded-4xl m-6 sm:m-10 lg:m-20 py-10 sm:py-16 relative z-20">
   <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-6 text-center text-white">
     <div>
       <h2 className="text-xl sm:text-2xl font-semibold uppercase">Fajar</h2>

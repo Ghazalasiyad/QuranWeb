@@ -6,7 +6,7 @@ const Card = ({ number, icon, title, description, buttonText }) => {
       {/* Top Section: Icon + Number */}
       <div className="flex items-center justify-between mb-4">
         {/* Render the image properly */}
-        <img src={icon} alt={title} className="w-12 h-12 object-contain" />
+        
 
         {/* Light Number */}
         <span className="text-5xl font-bold text-gray-200 absolute top-4 right-6">
@@ -21,7 +21,7 @@ const Card = ({ number, icon, title, description, buttonText }) => {
       <p className="text-gray-600 mt-3">{description}</p>
 
       {/* Button */}
-      <button className="mt-5  text-yellow-600  font-medium ">
+      <button className="mt-5  text-[#0fb8cd]  font-medium ">
         {buttonText}
       </button>
     </div>

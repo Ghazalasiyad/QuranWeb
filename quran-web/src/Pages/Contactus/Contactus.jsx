@@ -2,7 +2,7 @@ import React, { useState } from "react";
 
 const ContactForm = () => {
   const [formData, setFormData] = useState({
-    fullName: "",
+    name: "",
     email: "",
     service: "",
     country: "",
@@ -29,13 +29,13 @@ const ContactForm = () => {
         <form onSubmit={handleSubmit} className="space-y-5">
           {/* Full Name */}
           <div>
-           <label className="block text-gray-600 text-sm mb-1">
-  Name<span className="text-red-500">*</span>
-</label>
-
+            <label className="block text-gray-600 text-sm mb-1">
+              Name*
+            </label>
             <input
               type="text"
               name="fullName"
+              placeholder=""
               value={formData.fullName}
               onChange={handleChange}
               className="w-full border-b border-gray-300 focus:border-blue-500 outline-none py-2"
@@ -46,11 +46,12 @@ const ContactForm = () => {
           {/* Email */}
           <div>
             <label className="block text-gray-600 text-sm mb-1">
-              Email<span className="text-red-500">*</span>
+              Email*
             </label>
             <input
               type="email"
               name="email"
+              placeholder=""
               value={formData.email}
               onChange={handleChange}
               className="w-full border-b border-gray-300 focus:border-blue-500 outline-none py-2"
@@ -58,29 +59,31 @@ const ContactForm = () => {
             />
           </div>
 
-          {/* Service */}
+          {/* Phone */}
           <div>
             <label className="block text-gray-600 text-sm mb-1">
-              Service Interested<span className="text-red-500">*</span>
+              service Interested*
             </label>
             <input
-              type="text"
-              name="service"
-              value={formData.service}
+              type="tel"
+              name="phone"
+              placeholder=""
+              value={formData.phone}
               onChange={handleChange}
               className="w-full border-b border-gray-300 focus:border-blue-500 outline-none py-2"
               required
             />
           </div>
 
-          {/* Country */}
+          {/* Message */}
           <div>
             <label className="block text-gray-600 text-sm mb-1">
-              Country<span className="text-red-500">*</span>
+              Country*
             </label>
-            <input
-              type="text"
-              name="country"
+             <input
+              type="tel"
+              name="phone"
+              placeholder=""
               value={formData.country}
               onChange={handleChange}
               className="w-full border-b border-gray-300 focus:border-blue-500 outline-none py-2"
@@ -91,7 +94,7 @@ const ContactForm = () => {
           {/* Submit Button */}
           <button
             type="submit"
-            className="w-full bg-[#e9d8b1] text-white py-3 rounded-md"
+            className="w-full bg-[#0fb8cd] text-white py-3 rounded-md "
           >
             Apply Now
           </button>

@@ -1,10 +1,10 @@
 import Counter from "./Counter";
 import React from "react";
 const stats = [
-  { value: "65+", label: "Mosque" },
-  { value: "20+", label: "Madrasa" },
-  { value: "500+", label: "Students" },
-  { value: "80+", label: "Emam" },
+  { value: "65+", label: "Doctors" },
+  { value: "20+", label: "Exams" },
+  { value: "500+", label: "Placements" },
+  { value: "80+", label: "Visas" },
 ];
 
 const CounterList = () => {

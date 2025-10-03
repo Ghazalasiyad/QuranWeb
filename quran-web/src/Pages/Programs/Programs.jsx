@@ -4,7 +4,7 @@ const Shop = () => {
   return (
     <div>
       <div className='pt-30'>
-        service
+      programs
       </div>
       </div>
   )
